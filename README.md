@@ -55,6 +55,25 @@ get you started with internet connecting your micro:bits, or doing
 anything where you want to control things on (or from) a main
 computer.
 
+## IDEAS LIST
+
+1. add an outer protocol wrapper that allows radio commands to be
+actioned by the gateway micro:bit (e.g. change channel, change frequency,
+reset radio, change bitrate) in addition to transparrent data transfer
+
+2. add a host-side for the protocol wrapper, and surface the API on the host
+side identically to the MicroPython radio API - e.g. so that Pi driven
+Python code could do frequency hopping based communications.
+
+3. add in support for multiple micro:bits, all tuned to different channels
+(to improve the performance of a Pi based gateway that communicates
+on different channels)
+
+4. Find a way to remove the restriction of the MicroPython CTRL-C
+problem to allow transparrent binary data (perhaps wrap this up in
+the wrapping protocol with byte stuffing) so that true binary data
+can be sent in both directions without MicroPython stopping.
+
 David Whale
 
 @whaleygeek
