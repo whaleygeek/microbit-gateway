@@ -33,6 +33,20 @@ demo micro:bits should receive and display this number.
 If you press A or B on any of your demo micro:bits, you should see
 that appear on the console screen of your host computer.
 
+## NOTE!!
+
+If you are sharing radio payloads between PXT and MicroPython,
+note there are differences in the payload format. Please read this
+article to find out about this:
+
+https://support.microbit.org/solution/articles/19000053168-receiving-radio-data-from-pxt-within-python
+
+I will soon be adding a MicroPython based gateway example into this
+project too, for people who want the remote micro:bits to be coded
+entirely in MicroPython and for them to not need to worry about
+packing the extra DAL header and PXT headers required when
+sharing data between the two different languages.
+
 ## What's next
 
 What comes next is up to you. Any time you use process_outgoing()
