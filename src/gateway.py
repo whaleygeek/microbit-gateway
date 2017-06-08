@@ -14,7 +14,7 @@ def process_outgoing(msg):
     # this will be sent to the gateway micro:bit which will then
     # broadcast it to all listening micro:bit devices
     print("tx:%s" % str(msg))
-    microbit.send_message(msg + '\n')
+    microbit.send_message(msg)
 
 next_send = time.time() + SEND_RATE
 
