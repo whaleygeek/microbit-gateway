@@ -1,6 +1,10 @@
 # microbit-gateway
 A simple gateway onto the micro:bit radio network
 
+## PYTHON UPGRADE WARNING!
+
+This repository has code that was originally written in Python 2. Due to the worldwide effort to move to Python 3, this repo is therefore tagged for upgrade, but it's not done yet! You might find useful building blocks to do this yourself in https://github.com/whaleygeek/bitio which was based on this repo but has been upgraded to Python 3.
+
 ## Getting started
 
 Press CLONE OR DOWNLOAD
